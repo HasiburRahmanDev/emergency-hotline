@@ -45,11 +45,12 @@ function callHandle(id) {
         </div>`;
   callHistoryParent.appendChild(div);
 }
-document.getElementById("clr-btn").addEventListener("click", function () {
-  document.getElementById(call - history - parent).style.display = "none";
-
-  // while (parent.children.length > 1) {
-  //   parent.removeChild(parent.lastChild);
+const clrBtn = document.getElementById("clr-btn");
+clrBtn.addEventListener("click", function () {
+  const callHistoryParent = document.getElementById("call-history-parent");
+  if (callHistoryParent.children.length > 1) {
+    callHistoryParent.removeChild(callHistoryParent.lastElementChild);
+  }
 });
 
 document.getElementById("call-btn1").addEventListener("click", function () {
