@@ -44,13 +44,13 @@
       </div>
       <div class="right-div flex gap-2">
         <div
-          class="heart-items flex items-center gap-1 px-7 py-2 bg-[#41FF6B] rounded-xl"
+          class="heart-items flex items-center gap-1 px-7 py-2 bg-green-100 rounded-xl"
         >
           <h1 id="heart-count" class="font-bold">0</h1>
           <img class="h-5" src="assets/heart.png" alt="" />
         </div>
         <div
-          class="coin-items flex items-center gap-1 px-7 py-2 bg-[#41FF6B] rounded-xl"
+          class="coin-items flex items-center gap-1 px-7 py-2 bg-green-100 rounded-xl"
         >
           <h1 id="coin-count" class="font-bold">100</h1>
           <img class="h-5" src="assets/coin.png" alt="" />
@@ -58,7 +58,9 @@
         <div
           class="copy-items flex items-center px-7 py-2 bg-[#00A63E] rounded-xl"
         >
-          <h1 class="text-white font-bold">2 Copy</h1>
+          <h1 class="text-white font-bold">
+            <span id="copy-count">0</span> Copy
+          </h1>
         </div>
       </div>
     </header>
@@ -104,6 +106,7 @@
           <div class="flex justify-between">
             <div>
               <button
+                id="copy-card1"
                 class="flex items-center bg-[#D4D6D5] py-2 px-7 rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i>
@@ -147,6 +150,7 @@
           <div class="flex justify-between">
             <div>
               <button
+                id="copy-card2"
                 class="flex items-center bg-[#D4D6D5] py-2 px-7 rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i>
@@ -189,6 +193,7 @@
           <div class="flex justify-between">
             <div>
               <button
+                id="copy-card3"
                 class="flex items-center bg-[#D4D6D5] py-2 px-7 rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i>
@@ -231,6 +236,7 @@
           <div class="flex justify-between">
             <div>
               <button
+                id="copy-card4"
                 class="flex items-center bg-[#D4D6D5] py-2 px-7 rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i>
@@ -273,6 +279,7 @@
           <div class="flex justify-between">
             <div>
               <button
+                id="copy-card5"
                 class="flex items-center bg-[#D4D6D5] py-2 px-7 rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i>
@@ -315,6 +322,7 @@
           <div class="flex justify-between">
             <div>
               <button
+                id="copy-card6"
                 class="flex items-center bg-[#D4D6D5] py-2 px-7 rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i>
@@ -360,6 +368,7 @@
           <div class="flex justify-between">
             <div>
               <button
+                id="copy-card7"
                 class="flex items-center bg-[#D4D6D5] py-2 px-7 rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i>
@@ -402,6 +411,7 @@
           <div class="flex justify-between">
             <div>
               <button
+                id="copy-card8"
                 class="flex items-center bg-[#D4D6D5] py-2 px-7 rounded-lg"
               >
                 <i class="fa-regular fa-copy"></i>
@@ -444,7 +454,10 @@
           </div>
 
           <div class="flex justify-between">
-            <div class="flex items-center bg-[#D4D6D5] py-2 px-7 rounded-lg">
+            <div
+              id="copy-card9"
+              class="flex items-center bg-[#D4D6D5] py-2 px-7 rounded-lg"
+            >
               <i class="fa-regular fa-copy"></i>
               <h1>Copy</h1>
             </div>

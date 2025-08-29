@@ -48,10 +48,32 @@ function callHandle(id) {
 const clrBtn = document.getElementById("clr-btn");
 clrBtn.addEventListener("click", function () {
   const callHistoryParent = document.getElementById("call-history-parent");
-  if (callHistoryParent.children.length > 1) {
+  while (callHistoryParent.children.length > 1) {
     callHistoryParent.removeChild(callHistoryParent.lastElementChild);
   }
 });
+
+// Copy section got help from ChatGPT
+
+const copyCountElem = document.getElementById("copy-count");
+let copyCount = 0;
+
+for (let i = 1; i <= 9; i++) {
+  const copyBtn = document.getElementById(`copy-card${i}`);
+  if (copyBtn) {
+    copyBtn.addEventListener("click", function () {
+      const numberElem = document.getElementById(`number-card${i}`);
+      if (numberElem) {
+        navigator.clipboard.writeText(numberElem.innerText);
+        copyCount++;
+        copyCountElem.innerText = copyCount;
+        alert(
+          `Number ${numberElem.innerText} copied! You can paste it anywhere.`
+        );
+      }
+    });
+  }
+}
 
 document.getElementById("call-btn1").addEventListener("click", function () {
   callHandle("card1");
